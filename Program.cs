@@ -6,7 +6,18 @@ namespace workspace
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           string guessWord = "elephant";
+           string guess = "";
+           
+             while(guess != guessWord)
+             {
+               Console.Write("Enter guess: ");
+               guess = Console.ReadLine();
+             }
+            
+            Console.Write("You win!");
+          
+            Console.ReadLine();
         }
     }
 }
